@@ -38,9 +38,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="a5S-76-Amf"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="SSn-tv-QP5" appends="YES" id="85r-g5-FzR"/>
-                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,20 +53,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eGw-ku-hIk" secondAttribute="bottom" id="n4J-gK-EjG"/>
                             <constraint firstItem="ZjC-Im-hSX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tTf-pb-FPk"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="SSn-tv-QP5" appends="YES" id="IyF-Be-0Cb"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="tIn-ej-HRL" id="K4B-Ek-B1y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="SSn-tv-QP5">
-                    <connections>
-                        <action selector="swipeRightGesture:" destination="BYZ-38-t0r" id="0dd-0Z-bWj"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
         </scene>

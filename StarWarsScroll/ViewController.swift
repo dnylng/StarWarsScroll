@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Takes the scroll view's gesture recognizer and applies it to the main view
+        view.addGestureRecognizer(scrollView.panGestureRecognizer)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,16 +63,11 @@ class ViewController: UIViewController {
         print("Estimated Content Width: \(scrollWidth * 15)")
         print("Actual Content Width: \(contentWidth)")
     }
-
-    @IBAction func swipeRightGesture(_ sender: Any) {
-        print("Swiped right")
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
