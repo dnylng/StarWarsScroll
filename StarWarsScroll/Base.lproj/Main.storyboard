@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,20 +25,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="eGw-ku-hIk">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIn-ej-HRL">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starwars-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZjC-Im-hSX">
+                                <rect key="frame" x="28" y="8" width="264" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="ZR2-Mk-WfY"/>
+                                    <constraint firstAttribute="width" constant="264" id="cUL-rF-Jn7"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIn-ej-HRL">
+                                <rect key="frame" x="50" y="0.0" width="220" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="a5S-76-Amf"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ZjC-Im-hSX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="2Dq-s2-T1b"/>
                             <constraint firstAttribute="trailing" secondItem="eGw-ku-hIk" secondAttribute="trailing" id="5le-Eg-CjJ"/>
-                            <constraint firstAttribute="trailing" secondItem="tIn-ej-HRL" secondAttribute="trailing" id="Dk3-DS-G8D"/>
+                            <constraint firstItem="tIn-ej-HRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6MV-Gm-8GB"/>
                             <constraint firstItem="eGw-ku-hIk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VUz-ld-QfS"/>
                             <constraint firstItem="tIn-ej-HRL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZAC-oy-fc1"/>
                             <constraint firstItem="eGw-ku-hIk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j53-bw-dFC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tIn-ej-HRL" secondAttribute="bottom" id="mTg-5C-V8U"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eGw-ku-hIk" secondAttribute="bottom" id="n4J-gK-EjG"/>
-                            <constraint firstItem="tIn-ej-HRL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="otQ-lA-DEb"/>
+                            <constraint firstItem="ZjC-Im-hSX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tTf-pb-FPk"/>
                         </constraints>
                     </view>
                     <connections>
@@ -46,10 +58,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="1080" height="1920"/>
+        <image name="starwars-logo" width="2000" height="855"/>
     </resources>
 </document>
