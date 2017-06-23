@@ -33,6 +33,13 @@
                                     <constraint firstAttribute="width" constant="264" id="cUL-rF-Jn7"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-Al-42r" userLabel="Divider">
+                                <rect key="frame" x="0.0" y="538" width="320" height="5"/>
+                                <color key="backgroundColor" red="0.92499226331710815" green="0.84300726652145386" blue="0.11810836941003799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="pSv-f2-uBX"/>
+                                </constraints>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIn-ej-HRL">
                                 <rect key="frame" x="50" y="0.0" width="220" height="568"/>
                                 <constraints>
@@ -44,14 +51,17 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ZjC-Im-hSX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="2Dq-s2-T1b"/>
+                            <constraint firstAttribute="trailing" secondItem="fbZ-Al-42r" secondAttribute="trailing" id="47a-OF-yiY"/>
                             <constraint firstAttribute="trailing" secondItem="eGw-ku-hIk" secondAttribute="trailing" id="5le-Eg-CjJ"/>
                             <constraint firstItem="tIn-ej-HRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6MV-Gm-8GB"/>
+                            <constraint firstItem="fbZ-Al-42r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pny-gN-0OU"/>
                             <constraint firstItem="eGw-ku-hIk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VUz-ld-QfS"/>
                             <constraint firstItem="tIn-ej-HRL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZAC-oy-fc1"/>
                             <constraint firstItem="eGw-ku-hIk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j53-bw-dFC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tIn-ej-HRL" secondAttribute="bottom" id="mTg-5C-V8U"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eGw-ku-hIk" secondAttribute="bottom" id="n4J-gK-EjG"/>
                             <constraint firstItem="ZjC-Im-hSX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tTf-pb-FPk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fbZ-Al-42r" secondAttribute="bottom" constant="25" id="ztK-Ef-7fD"/>
                         </constraints>
                     </view>
                     <connections>
